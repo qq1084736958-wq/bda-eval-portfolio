@@ -1,0 +1,203 @@
+{
+  "dataset": "default (offline-eval-v1)",
+  "generatedAt": "2026-10-22",
+  "modelMode": "deepseek (DeepSeek-V3.2)",
+  "total": 80,
+  "overall": {
+    "n": 80,
+    "routeAccuracy": 95,
+    "statusAccuracy": 92.5,
+    "evidenceHit": 87.9,
+    "valueCorrect": 100,
+    "verdict": {
+      "PASS": 25,
+      "REVIEW": 49,
+      "FAIL": 6
+    }
+  },
+  "byCategory": {
+    "结构化经营查询": {
+      "n": 15,
+      "routeAccuracy": 100,
+      "statusAccuracy": 100,
+      "evidenceHit": null,
+      "valueCorrect": 100,
+      "verdict": {
+        "PASS": 14,
+        "REVIEW": 1,
+        "FAIL": 0
+      }
+    },
+    "RAG知识问答": {
+      "n": 10,
+      "routeAccuracy": 80,
+      "statusAccuracy": 80,
+      "evidenceHit": 80,
+      "valueCorrect": null,
+      "verdict": {
+        "PASS": 0,
+        "REVIEW": 8,
+        "FAIL": 2
+      }
+    },
+    "上下文追问": {
+      "n": 10,
+      "routeAccuracy": 90,
+      "statusAccuracy": 80,
+      "evidenceHit": 50,
+      "valueCorrect": 100,
+      "verdict": {
+        "PASS": 5,
+        "REVIEW": 3,
+        "FAIL": 2
+      }
+    },
+    "权限安全": {
+      "n": 10,
+      "routeAccuracy": 100,
+      "statusAccuracy": 100,
+      "evidenceHit": 100,
+      "valueCorrect": 100,
+      "verdict": {
+        "PASS": 1,
+        "REVIEW": 9,
+        "FAIL": 0
+      }
+    },
+    "无数据/无依据": {
+      "n": 10,
+      "routeAccuracy": 100,
+      "statusAccuracy": 90,
+      "evidenceHit": 100,
+      "valueCorrect": null,
+      "verdict": {
+        "PASS": 0,
+        "REVIEW": 9,
+        "FAIL": 1
+      }
+    },
+    "复合问题": {
+      "n": 5,
+      "routeAccuracy": 80,
+      "statusAccuracy": 80,
+      "evidenceHit": 80,
+      "valueCorrect": 100,
+      "verdict": {
+        "PASS": 0,
+        "REVIEW": 4,
+        "FAIL": 1
+      }
+    },
+    "正常经营回答": {
+      "n": 5,
+      "routeAccuracy": 100,
+      "statusAccuracy": 100,
+      "evidenceHit": null,
+      "valueCorrect": 100,
+      "verdict": {
+        "PASS": 4,
+        "REVIEW": 1,
+        "FAIL": 0
+      }
+    },
+    "RAG制度回答": {
+      "n": 4,
+      "routeAccuracy": 100,
+      "statusAccuracy": 100,
+      "evidenceHit": 100,
+      "valueCorrect": null,
+      "verdict": {
+        "PASS": 0,
+        "REVIEW": 4,
+        "FAIL": 0
+      }
+    },
+    "失败状态提示": {
+      "n": 5,
+      "routeAccuracy": 100,
+      "statusAccuracy": 100,
+      "evidenceHit": 100,
+      "valueCorrect": null,
+      "verdict": {
+        "PASS": 0,
+        "REVIEW": 5,
+        "FAIL": 0
+      }
+    },
+    "上下文与复合问题": {
+      "n": 3,
+      "routeAccuracy": 100,
+      "statusAccuracy": 100,
+      "evidenceHit": 100,
+      "valueCorrect": 100,
+      "verdict": {
+        "PASS": 0,
+        "REVIEW": 3,
+        "FAIL": 0
+      }
+    },
+    "错别字与模糊表达": {
+      "n": 3,
+      "routeAccuracy": 100,
+      "statusAccuracy": 100,
+      "evidenceHit": null,
+      "valueCorrect": 100,
+      "verdict": {
+        "PASS": 1,
+        "REVIEW": 2,
+        "FAIL": 0
+      }
+    }
+  },
+  "failures": [
+    {
+      "code": "RAG-003",
+      "category": "RAG知识问答",
+      "route": false,
+      "status": false,
+      "evidence": false,
+      "value": null
+    },
+    {
+      "code": "RAG-004",
+      "category": "RAG知识问答",
+      "route": false,
+      "status": false,
+      "evidence": false,
+      "value": null
+    },
+    {
+      "code": "CTX-006",
+      "category": "上下文追问",
+      "route": true,
+      "status": false,
+      "evidence": false,
+      "value": null
+    },
+    {
+      "code": "CTX-007",
+      "category": "上下文追问",
+      "route": false,
+      "status": false,
+      "evidence": null,
+      "value": null,
+      "error": "Cannot read properties of undefined (reading 'timeRange')"
+    },
+    {
+      "code": "NOD-010",
+      "category": "无数据/无依据",
+      "route": true,
+      "status": false,
+      "evidence": true,
+      "value": null
+    },
+    {
+      "code": "CMP-003",
+      "category": "复合问题",
+      "route": false,
+      "status": false,
+      "evidence": false,
+      "value": true
+    }
+  ]
+}
