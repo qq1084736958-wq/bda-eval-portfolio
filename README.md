@@ -88,12 +88,11 @@
 | [评测体系设计与发现](docs/评测体系设计与发现.md) | 两层指标 + 真实基线 + 评测驱动的发现（核心） |
 | [迭代与 Badcase](docs/迭代与badcase.md) | 代表性 Badcase 的 tracing 归因、修改与回归 |
 | [产品概述](docs/产品概述.md) | 核心能力与运营后台一览 |
-| [面试速答](docs/面试速答.md) | 口径、决策、链路、评测、边界的可直接讲版本 |
 
 ## 📁 仓库结构
 
 ```
-docs/          PRD · Agent工作流与架构 · 评测体系 · 迭代与Badcase · 产品概述 · 面试速答
+docs/          PRD · Agent工作流与架构 · 评测体系 · 迭代与Badcase · 产品概述
 reports/       真实评测结果（确定性基线 + 质量五维 JSON）
 eval-dataset/  真实问题回流候选集 + 人工标注工作表
 scripts/       评测脚本（真实问题回流 / 确定性基线 / 自动五维 Judge）
