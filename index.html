@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="智能经营数据问答助手：面向企业经营数据与制度知识的可控 AI 问答产品作品集。" />
+    <title>智能经营数据问答助手 · AI 产品作品集</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="返回顶部">
+          <span class="brand-mark">AI</span>
+          <span>Business Data Assistant</span>
+        </a>
+        <div class="nav-links">
+          <a href="#product">产品</a>
+          <a href="#workflow">工作流</a>
+          <a href="#evaluation">评测</a>
+          <a href="#badcase">发现</a>
+          <a href="#docs">文档</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero-inner">
+        <p class="eyebrow">AI Product Manager Portfolio · 2026</p>
+        <h1>智能经营数据问答助手</h1>
+        <p class="subtitle">
+          面向企业管理者的可控 AI 经营问答产品。用户用自然语言查询经营数据与制度知识，系统在权限范围内返回
+          <strong>有结论、有依据、有权限边界、知道下一步</strong> 的答案。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#evaluation">查看真实评测结果</a>
+          <a class="button ghost" href="./docs/PRD.md">阅读 PRD</a>
+          <a class="button ghost" href="./docs/agent-%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%B8%8E%E6%9E%B6%E6%9E%84.md">Agent 工作流</a>
+        </div>
+        <div class="hero-note">
+          我的角色：AI 产品经理（实习）｜参与产品设计，独立搭建评测体系。数据为可重复生成的模拟数据，非真实企业数据。
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="metric-strip" aria-label="关键评测结果">
+        <article><span>95.0%</span><p>路由准确率</p></article>
+        <article><span>92.5%</span><p>状态准确率</p></article>
+        <article><span>87.9%</span><p>RAG 引用命中</p></article>
+        <article><span>100%</span><p>结构化取值正确</p></article>
+        <article><span>4.58/5</span><p>答案质量五维</p></article>
+      </section>
+
+      <section id="product" class="section two-col">
+        <div>
+          <p class="eyebrow">01 · Product Problem</p>
+          <h2>为什么这个产品值得做？</h2>
+          <p>
+            企业经营数据分散在报表、项目台账、采购数据和制度文档中。管理者想问一句“今年采购金额最高的 5 个项目是什么？”
+            往往需要知道入口、指标名、筛选条件和权限范围；制度类问题还涉及版本、生效日期与引用依据。
+          </p>
+          <p>
+            我把问题定义为：如何让管理者不用切换多个系统，也能得到“能复核、不过权、不编造”的经营答案。
+          </p>
+        </div>
+        <div class="card-grid compact">
+          <article class="card"><h3>高管</h3><p>看全局、趋势、重点项目。</p></article>
+          <article class="card"><h3>部门经理</h3><p>管理本部门预算和采购。</p></article>
+          <article class="card"><h3>项目专员</h3><p>查项目、理解采购口径。</p></article>
+          <article class="card"><h3>运营管理员</h3><p>看日志、反馈、评测和知识库。</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">02 · Product Capability</p>
+        <h2>产品能力地图</h2>
+        <div class="card-grid">
+          <article class="card"><h3>结构化经营查询</h3><p>采购金额、立项金额、采购结果等指标由数据库确定性计算，避免金额幻觉。</p></article>
+          <article class="card"><h3>制度知识 RAG</h3><p>先按版本、日期、权限过滤，再召回文档片段并强制引用，拒绝无依据编造。</p></article>
+          <article class="card"><h3>权限与金额精度</h3><p>高管、部门经理、项目专员的可见范围和金额精度不同，越权不泄露。</p></article>
+          <article class="card"><h3>多轮上下文</h3><p>保存“可执行任务规格”，而不是只保存聊天文本，支持“按项目排一下”。</p></article>
+          <article class="card"><h3>运营后台</h3><p>问答日志、未知问题池、用户反馈、知识库、Prompt、评测中心形成闭环。</p></article>
+          <article class="card"><h3>可追溯 Trace</h3><p>每次问答记录路由、指标、权限规则、来源和状态，便于定位失败节点。</p></article>
+        </div>
+      </section>
+
+      <section id="workflow" class="section workflow-section">
+        <p class="eyebrow">03 · Agent Workflow</p>
+        <h2>Agent 工作流：AI 处理模糊性，系统处理确定性</h2>
+        <div class="workflow">
+          <div>用户问题 + 登录身份 + 上下文</div>
+          <div>问题归一化<br /><small>错别字 / 别名 / 模糊条件</small></div>
+          <div>任务路由<br /><small>STRUCTURED / RAG / COMPOSITE</small></div>
+          <div>结构化查询 / RAG 检索<br /><small>权限过滤 + 版本过滤 + 召回重排</small></div>
+          <div>答案组合与校验<br /><small>数值 / 来源 / 状态 / 下一步</small></div>
+          <div>展示 + Trace + 评测回归</div>
+        </div>
+        <div class="decision-grid">
+          <article><h3>为什么不用“模型全包”？</h3><p>经营金额和权限属于高风险确定性信息，必须由数据库、权限规则和文档版本控制。</p></article>
+          <article><h3>为什么暂不做多 Agent？</h3><p>当前任务路径稳定，固定 Workflow 成本更低、延迟可控、每个节点更容易 Trace 与评测。</p></article>
+        </div>
+      </section>
+
+      <section id="evaluation" class="section evaluation">
+        <p class="eyebrow">04 · Evaluation System</p>
+        <h2>我搭建的评测体系</h2>
+        <div class="two-col">
+          <div>
+            <p>
+              评测不是为了写一个漂亮数字，而是为了回答：系统在哪类任务上稳、哪类任务弱、为什么失败、改版后有没有退化。
+              我设计了两层指标：确定性层自动检查路由/状态/引用/取值；质量层用跨家族 LLM-as-Judge 打五维分。
+            </p>
+            <ul class="check-list">
+              <li>80 条标注用例，覆盖结构化、RAG、追问、权限、无依据和复合问题。</li>
+              <li>从未知问题池、用户反馈、问答日志回流 66 条候选用例。</li>
+              <li>答案质量五维：正确性、清晰度、依据充分性、可行动性、表达自然度。</li>
+              <li>固定数据集与口径作为回归基线，改版后重跑定位退化。</li>
+            </ul>
+          </div>
+          <div class="score-card">
+            <h3>真实基线 · 2026-10-22</h3>
+            <dl>
+              <dt>被测模型</dt><dd>DeepSeek-V3.2</dd>
+              <dt>质量评审</dt><dd>gpt-4.1-mini</dd>
+              <dt>综合质量分</dt><dd>4.58 / 5</dd>
+              <dt>最弱维度</dt><dd>依据充分性 4.15</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="badcase" class="section">
+        <p class="eyebrow">05 · Findings</p>
+        <h2>评测驱动的关键发现</h2>
+        <div class="card-grid">
+          <article class="card highlight"><h3>口径歧义是头号真实痛点</h3><p>“采购金额是否包含暂估金额”同时出现在评测失败、未知问题池和用户差评三处。</p></article>
+          <article class="card highlight"><h3>制度/招标知识覆盖不足</h3><p>招标阈值、采购方式、例外审批等 RAG 题失败且在未知问题中复现。</p></article>
+          <article class="card highlight"><h3>多轮追问暴露稳定性缺陷</h3><p>评测定位到上下文继承空值导致的崩溃，用例已纳入回归清单。</p></article>
+          <article class="card highlight"><h3>依据充分性是最弱维度</h3><p>结论往往正确，但来源、口径版本、记录数展示仍需强化。</p></article>
+        </div>
+      </section>
+
+      <section id="docs" class="section docs">
+        <p class="eyebrow">06 · Artifacts</p>
+        <h2>作品集文档与证据</h2>
+        <div class="doc-list">
+          <a href="./docs/PRD.md"><span>PRD</span><strong>完整产品需求文档</strong></a>
+          <a href="./docs/agent-%E5%B7%A5%E4%BD%9C%E6%B5%81%E4%B8%8E%E6%9E%B6%E6%9E%84.md"><span>Workflow</span><strong>Agent 工作流与架构</strong></a>
+          <a href="./docs/%E8%AF%84%E6%B5%8B%E4%BD%93%E7%B3%BB%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%8F%91%E7%8E%B0.md"><span>Evaluation</span><strong>评测体系设计与发现</strong></a>
+          <a href="./docs/%E8%BF%AD%E4%BB%A3%E4%B8%8Ebadcase.md"><span>Badcase</span><strong>迭代与 Badcase</strong></a>
+          <a href="./reports/baseline-report.json"><span>Report</span><strong>确定性基线 JSON</strong></a>
+          <a href="./reports/answer-quality-report.json"><span>Report</span><strong>答案质量报告 JSON</strong></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 · Business Data Assistant Portfolio · 模拟数据离线验证，不代表真实企业上线成果。</p>
+      <a href="https://github.com/qq1084736958-wq/bda-eval-portfolio">GitHub Repository</a>
+    </footer>
+  </body>
+</html>
