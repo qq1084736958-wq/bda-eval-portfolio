@@ -3,9 +3,10 @@
 > **一句话**：面向企业管理者的**可控 AI 经营问答**产品——用自然语言查经营数据与制度知识，系统在**权限范围内**返回**可追溯、知道下一步怎么做**的答案，而不是一段无法验证的 AI 文本。
 >
 > 我是该项目的 **AI 产品经理（实习）**：参与产品设计，并**独立搭建了它的评测体系**。本仓库是作品集——展示产品思路 + 我搭建的评测体系与**真实评测结果**。产品完整源码不在此公开（含企业场景模拟数据与协作代码）。
- 演示视频：https://my.feishu.cn/file/L85PbV1l1obugaxnHzIcdy0Zn0c
 
- 原型链接：https://lanhuapp.com/link/#/invite?sid=lXh2dFPa
+> 演示视频：https://my.feishu.cn/file/L85PbV1l1obugaxnHzIcdy0Zn0c
+
+> 原型链接：https://lanhuapp.com/link/#/invite?sid=lXh2dFPa
 ---
 
 ## 📌 项目速览
